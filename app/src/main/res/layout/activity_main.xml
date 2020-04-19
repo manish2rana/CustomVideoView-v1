@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.MainActivity">
+
+    <FrameLayout
+            android:id="@+id/videoSurfaceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+        <SurfaceView
+                android:id="@+id/videoSurface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>
